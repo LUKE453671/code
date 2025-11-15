@@ -19,12 +19,12 @@ class Expenses {
     public double getAmount() { return amount; }
 }
 
-// Abstraction: interface for viewing expenses
+// Abstraction
 interface ExpenseViewer {
     void view(Expenses[] list, int count);
 }
 
-// Polymorphism: concrete class implementing ExpenseViewer
+// Polymorphism
 class ConsoleExpenseViewer implements ExpenseViewer {
     @Override
     public void view(Expenses[] list, int count) {
@@ -138,3 +138,4 @@ public class Main {
         return count;
     }
 }
+
